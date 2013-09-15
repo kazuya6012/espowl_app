@@ -50,7 +50,7 @@ describe "User pages" do
     end
   end    
   describe "profile page" do
-    let(:user) { FactoryGirl.create(:user) }
+    let(:user) { FactoryGirl.create(:user) }q
     before { visit user_path(user) }
 
     it { should have_content(user.name) }
